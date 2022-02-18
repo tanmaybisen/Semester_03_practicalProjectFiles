@@ -1,0 +1,5 @@
+Practical 1
+
+1) Program to find the square root of the number entered by the user.
+2) Program to convert Celsius to Fahrenheit.
+3) Program to find the roots of a quadratic equation entered by the user.
