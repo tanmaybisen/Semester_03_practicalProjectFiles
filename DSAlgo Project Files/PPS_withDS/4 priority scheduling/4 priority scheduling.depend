@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600505048 source:c:\users\rashu\desktop\codeblocks .c files\4 priority scheduling\main.c
+	<stdio.h>
+	<stdlib.h>
+

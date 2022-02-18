@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600511485 source:c:\users\rashu\desktop\codeblocks .c files\1 stack as queue\main.c
+	<stdio.h>
+	<stdlib.h>
+

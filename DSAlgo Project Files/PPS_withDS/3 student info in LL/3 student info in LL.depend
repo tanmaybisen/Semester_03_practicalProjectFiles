@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1600513943 source:c:\users\rashu\desktop\codeblocks .c files\3 student info in ll\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
