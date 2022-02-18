@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity JKFF is
+port(
+clk,j,k,ps:in std_logic;
+ns:out std_logic
+);
+end JKFF;
+
+architecture bev of JKFF is
+begin
+process(clk,j,k,ps)
+begin
+if(clk='1' and j='0' and k='0') then
+	ns<=ps;
+elsif(clk='1' and j='0' and k='1') then
+	ns<='0';
+elsif(clk='1' and j='1' and k='0') then
+	ns<='1';
+elsif(clk='1' and j='1' and k='1') then
+	ns<=not ps;
+elsif(clk='0') then
+	ns<=ps;
+end if;
+end process;
+end bev;
+
+

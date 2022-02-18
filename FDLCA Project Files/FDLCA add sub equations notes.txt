@@ -1,0 +1,81 @@
+Institute of Electrical and Electronics Engineers (IEEE).
+VHSIC stands for Very High-Speed Integrated Circuit.
+VHSIC Hardware Description Language (VHDL).
+
+An architecture statement defines the structure or description of a design 
+and is bounded with an entity.
+
+bi to grey code conerter
+G0= B0 Ꚛ B1
+G1= B1 Ꚛ B2
+G2= B2 Ꚛ B3
+G3= B3
+
+grey to bi code converter
+B0= G3 Ꚛ G2 Ꚛ G1 Ꚛ G0
+B1= G3 Ꚛ G2 Ꚛ G1
+B2= G3 Ꚛ G2
+B3= G3
+
+excess 5
+x<=a or b or (c and d);
+y<=a or ((not b) and (not c)) or ((not b) and (not d)) or (c and b and d);
+z<=c xor d;
+t<= not d;
+
+BCD to 7seg display
+a=A + C + BD + B'D'
+b=B'+ C'D' + CD
+c=B + C' + D
+d=B'D' + CD' + BC'D + B'C + A 
+e=B'D' + CD'
+f=A + C'D' + BC' + BD'
+g=B'C + CD' + BC' + A
+
+BCd to 7 seg equeations
+a1<=A or C or (B and D) or ((not B) and (not D));
+b1<=(not B) or ((not C) and (not D)) or (C and D);
+c1<=B or (not C) or D;
+d1<=((C) and (not D)) or ((not B) and (not D)) or ((not B) and C) or ((B) and (not C) and (D)) or A;
+e<=((not B) and (not D)) or ((C) and (not D));
+f<=A or ((not C) and (not D)) or ((B) and (not C)) or ((B) and (not D));
+g<=((not B) and (C)) or ((C) and (not D)) or ((B) and (not C)) or A;
+
+no of components required for 3X8 decoder
+2 only
+one decoder-used 2 times
+one not gate-used once
+
+Octal to Binary Encoder
+X = D4+D5+D6+D7
+Y = D2+D3+D6+D7
+Z = D1+D3+D5+D7
+
+half adder
+sum= a Ꚛ b  
+carry= a and b
+
+full adder
+sum= a Ꚛ b Ꚛ c
+carry= a.b + b.c + a.c     (.)=product (+)=addition (Ꚛ) = XOR
+
+full adder using half
+S = A Ꚛ B Ꚛ Cin
+Cout = (AꚚB) Cin + AB
+
+half sub
+diff= a Ꚛ b
+borrow= a'.b
+
+full sub
+diff= a Ꚛ b Ꚛ c 
+borrow= a'.b + a'.c + b.c
+
+full sub using half
+D = A Ꚛ B Ꚛ Bi
+B0= A’B + (A Ꚛ B)’ Bi
+
+Carry look ahead adder
+Ci+1 = (Ai.Bi) + (Ai + Bi)Ci
+ci+1 =  (Gi)   +  (Pi).Ci
+

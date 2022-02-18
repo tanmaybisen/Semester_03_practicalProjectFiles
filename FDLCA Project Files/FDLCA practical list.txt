@@ -1,0 +1,6 @@
+1. and ,or ,not ,xor ,xnor ,nand using nor ,nor using nand
+2. bcd to excess 5, bcd to 7 seg 
+3. half adder , full adder , 4-bit adder , 4-bit adder subtractor
+4. BCD adder , BCD SUB 9's comp
+5. MUX, DEMUX , mux-demux ()
+6. JK flip flop , 0110 overlapping sequence detector (bev)
